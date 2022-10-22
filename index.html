@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Frontend Mentor | Interactive rating component</title>
+  </head>
+  <body>
+    <!-- Rating state start -->
+
+    <main class="preview-card" id="preview-card">
+      <div class="star-container">
+        <img src="./images/icon-star.svg" alt="Rating System" />
+      </div>
+      <h1>How did we do?</h1>
+
+      <p>
+        Please let us know how we did with your support request. All feedback is
+        appreciated to help us improve our offering!
+      </p>
+      <form>
+        <div class="input-container">
+          <input
+            type="button"
+            aria-label="Value 1"
+            name="value-1"
+            id="value-1"
+            value="1"
+          />
+          <input
+            type="button"
+            aria-label="Value 2"
+            name="value-2"
+            id="value-2"
+            value="2"
+          />
+          <input
+            type="button"
+            aria-label="Value 3"
+            name="value-3"
+            id="value-3"
+            value="3"
+          />
+          <input
+            type="button"
+            aria-label="Value 4"
+            name="value-4"
+            id="value-4"
+            value="4"
+          />
+          <input
+            type="button"
+            aria-label="Value 5"
+            name="value-5"
+            id="value-5"
+            value="5"
+          />
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+
+    <!-- Rating state end -->
+
+    <!-- Thank you state start -->
+
+    <main class="thank-you-card" id="thank-you-card">
+      <img
+        src="./images/illustration-thank-you.svg"
+        alt="Thank you for rating"
+      />
+      <p>You selected <span id="rate"></span> out of 5</p>
+      <!-- Add rating here -->
+      <h1>Thank you!</h1>
+      <p>
+        We appreciate you taking the time to give a rating. If you ever need
+        more support, don’t hesitate to get in touch!
+      </p>
+    </main>
+    <!-- Thank you state end -->
+    <script src="./index.js"></script>
+  </body>
+</html>
